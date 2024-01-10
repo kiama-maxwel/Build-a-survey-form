@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <h1>Survey Form</h1>
-    <p> This is my first survey form</p>
-    <input>
+    <h1 id="Title">Title</h1>
+    <p id="description"> This is my first survey form</p>
+    <form id="survey-form">
+       <label><input id="name" type="text" placeholder="Name">Name</label><br><br>
+       <label><input id="email" type="text" placeholder="Email">Email</label><br><br>
+       <label><input id="number" type="number" max="5" min="2" placeholder="Number">Number</label><br><br> 
+       <label for="grades"> Choose A or B</label>
+       <select id="grades" name="grades">
+             <option value="A">A</option>
+             <option value="B">B</option><br>
+            <label><input type="radio" name="A">PASS</label><br>
+            <label><input type="radio" name="B">FAIL</label><br>
+            <input type="checkbox" value="PROCEED">PROCEED <br>
+            <input type="checkbox" value="REPEAT"> REPEAT <br>
+            <input type="checkbox" value="SUPLIMENTARY"> SUPLIMENTARY <br>
+            <textarea>Additional comments</textarea> <br>
+            <button type="submit">Submit</button>
+
+
+       </select>
+
+
+    </form>
+    
 
 </head>
 <body>
-    <form>Surevey-form</form>
+    
+       
+    
     
 </body>
 </html>
