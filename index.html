@@ -3,43 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1 id="Title">Title</h1>
-    <p id="description"> This is my first survey form</p>
-    <form id="survey-form">
-       <label><input id="name" type="text" placeholder="Name">Name</label><br><br>
-       <label><input id="email" type="text" placeholder="Email">Email</label><br><br>
-       <label><input id="number" type="number" max="5" min="2" placeholder="Number">Number</label><br><br> 
-       <label for="grades"> Choose A or B</label>
-       <select id="grades" name="grades">
-             <option value="A">A</option>
-             <option value="B">B</option><br>
-       </select><br>
-
-             <label>PASS</label><br>
-             <input type="radio" name="A">
-
-            <label>FAIL</label>
-            <input type="radio" name="B">
-            
-            <input type="checkbox" value="PROCEED">PROCEED <br>
-            <input type="checkbox" value="REPEAT"> REPEAT <br>
-
-            <input type="checkbox" value="SUPLIMENTARY"> SUPLIMENTARY <br>
-            <textarea>Additional comments</textarea> <br>
-            <button type="submit">Submit</button>
-
-
-       
-
-
-    </form>
-    
-
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body> 
+      <div class="container"></div>
+        <header class="header"></header>
+        <h1 id="title" class="text-center" >MY FIRST SURVEY FORM</h1> 
+        <p id="description" class="description text-center">Thank you for taking time to help us improve on the plartform</p>  
+      </header>
+<form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input text="text" name="name" id="name" class="form-control" placeholder="enter your name" required>
+      </div>
+
+      <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+                  <input type="email" name="email" id="email"  class="form-control" placeholder="enter your email" required>
+      </div>
+
+
+      <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue"></span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+      </div>
+
+      <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value >Select current role</option>
+                  <option value="student">Student</option>
+                  <option value="Job">Full Time Learner</option>
+                  <option value="learner">Full Time Learner</option>
+                  <option value="preferno">Prefer not to say</option>
+                  <option value="other">Other</option>
+            </select>
+      </div>
+
+      <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                  <input name="user-recommend" value="definitly" type="radio" class="input-radio" checked/>Definitly</label>
+            </label>
+            <label>
+                  <input name="user-recommend" type="radio" value="maybe" class="input-radio" />Maybe</label>
+            </label>
+            <label>
+                  <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not Sure
+            </label>
+      </div>
        
-    
-    
+
+      <div class="form-group">
+            <p>What is your favourite feature of freeCodeCamp</p>
+            <select id="most-like" name="mostlike" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="challenges">challenges</option>
+                  <option value="projects">projects</option>
+                  <option value="community">commumity</option>
+                  <option value="open source">open source</option>
+            </select>
+      </div>
+       
+
+      <div class="form-group">
+            <p>what would you like to be improved?<span class="clue">(check all that appply)</span></p>
+            
+      
+      
+                  <label>
+                     <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Front-end-projects
+                  </label>
+
+                  <label>
+                        <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox"/>back-end-projects
+                         </label>
+
+                  <label>
+                        <input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox"/>data visualization
+                        </label>
+      
+                   <label>
+                              <input type="checkbox" name=" challenges" value="challenges" class="input-checkbox"/>challenges
+                        </label>
+
+                  <label>
+                        <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox"/>Open Source Community
+                         </label>
+
+                        <label>
+                               <input type="checkbox" name="prefer" value="gitter-hekp-rooms" class="input-checkbox"/>Gitter Help Rooms
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="prefer"  class="input-checkbox" value="videos"/>videos
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="prefer" value="city-meetups" class="input-checkbox"/>City Meetups
+                         </label>
+
+                        <label>
+                               <input type="checkbox" name="prefer" value="wiki" class="input-checkbox"/>Wiki
+                         </label>
+
+                         <label>
+                              <input type="checkbox" name="prefer" class="input-checkbox" value="forum"/>forum
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="prefer" value="Additional-courses" class="input-checkbox"/>Additional Courses
+                        </label>
+      
+      </div>
+
+      <div class="form-group">
+            <p>Any comments or suggestions</p>
+            <textarea id="comments" class="comments" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
 </body>
 </html>
+
+
+    
+       
+    
+    
+

@@ -1,0 +1,15 @@
+h1 {
+    color: brown;
+    background-color: aqua;
+
+}
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form {
+    border: 3cm;
+  }
