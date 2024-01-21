@@ -1,6 +1,7 @@
 h1 {
     color: brown;
     background-color: aqua;
+    text-align: center;
 
 }
 /* Style labels */
@@ -12,4 +13,15 @@ label {
   
   form {
     border: 3cm;
+  }
+  body  {border-style: solid;
+         background-color: aquamarine;
+
+  };
+ p { margin: auto;
+
+ }
+  input {
+    color: blue;
+    box-sizing: border-box;
   }
