@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Survy form</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body> 
-      ::BEFORE
+      
       <div class="container"></div>
         <header class="header">
         <h1 id="title" class="text-center" >MY FIRST SURVEY FORM</h1> 
@@ -22,13 +23,13 @@
 
       <div class="form-group">
             <label id="email-label" for="email">Email</label>
-                  <input type="email" name="email" id="email"  class="form-control" placeholder="Enter your email" required>
+                  <input type="text" name="email" id="email"  class="form-control" placeholder="Enter your email" required>
       </div>
 
 
       <div class="form-group">
             <label id="number-label" for="number">Age<span class="clue"></span></label>
-            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            <input type="number" name="age" id="number" min="15" max="80" class="form-control" placeholder="Age">
       </div>
 
       <div class="form-group">
@@ -61,10 +62,10 @@
             <p>What is your current course?</p>
             <select id="most-like" name="mostlike" class="form-control" required>
                   <option disabled selected value>Select an option</option>
-                  <option value="challenges">challenges</option>
-                  <option value="projects">projects</option>
-                  <option value="community">commumity</option>
-                  <option value="open source">open source</option>
+                  <option value="challenges">Pure Mathematics</option>
+                  <option value="projects">Computer Science</option>
+                  <option value="community">Applied Mathematics</option>
+                  <option value="open source">Bachelor of Science</option>
             </select>
       </div>
        
@@ -75,15 +76,15 @@
       
       
                   <label>
-                     <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Front-end-projects
+                     <input name="prefer" value="Pure-Math-projects" type="checkbox" class="input-checkbox"/>Pure Maths projects
                   </label> <br>
 
                   <label>
-                        <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox"/>back-end-projects
+                        <input type="checkbox" name="prefer" value="Bsc-projects" class="input-checkbox"/>BSc projects
                          </label> <br>
 
                   <label>
-                        <input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox"/>data visualization
+                        <input type="checkbox" name="prefer" value="Mode-of-study" class="input-checkbox"/>Mode of Study 
                         </label> <br>
       
                    <label>
@@ -91,23 +92,23 @@
                         </label> <br>
 
                   <label>
-                        <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox"/>Open Source Community
+                        <input type="checkbox" name="prefer" value="Long-distance-Study" class="input-checkbox"/>Long distance Study
                          </label> <br>
 
                         <label>
-                               <input type="checkbox" name="prefer" value="gitter-hekp-rooms" class="input-checkbox"/>Gitter Help Rooms
+                               <input type="checkbox" name="prefer" value="Tech-Equipment" class="input-checkbox"/>Tech Equipments
                         </label> <br>
 
                         <label>
-                              <input type="checkbox" name="prefer"  class="input-checkbox" value="videos"/>videos
+                              <input type="checkbox" name="prefer"  class="input-checkbox" value="videos-lessons"/>videos Lessons
                         </label> <br>
 
                         <label>
-                              <input type="checkbox" name="prefer" value="city-meetups" class="input-checkbox"/>City Meetups
+                              <input type="checkbox" name="prefer" value="Project-grouping" class="input-checkbox"/>Project Grouping
                          </label> <br>
 
                         <label>
-                               <input type="checkbox" name="prefer" value="wiki" class="input-checkbox"/>Wiki
+                               <input type="checkbox" name="prefer" value="Online-Classes" class="input-checkbox"/>Online Classes
                          </label> <br>
 
                          <label>
